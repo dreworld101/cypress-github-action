@@ -7,4 +7,5 @@ it('Web App', function(){
     cy.get('#aLoginModal').click()
     cy.get('#txtLoginEmail').type('hello@sja.org.uk')
     cy.get('#txtLoginPassword').type('bye')
+    console.log('Hello SJA')
 })
