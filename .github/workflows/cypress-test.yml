@@ -18,4 +18,4 @@ jobs:
         working-directory: cypress
       - name: Run cypress test
         run: npx cypress run
-        working-directory: cypress-github-workflow
+        working-directory: cypress/integration
