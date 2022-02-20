@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run"
+    "cypress:run-tests:headless": "npx cypress run",
+    "cypress:run-tests:local": "npx cypress open",
+    "cypress:run-tests:record": "npx cypress run --record --key 1129f1a8-5179-4024-ae12-d7cbb9006494"
+
   },
   "keywords": [],
   "author": "",
