@@ -12,11 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          record: true
-        env:
-         Cypress_record_key: ${{ secrets.Cypress_RECORD_KEY }}
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Install dependencies
