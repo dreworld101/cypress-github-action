@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          record: true
+        env:
+         Cypress_record_key: ${{ secrets.Cypress_RECORD_KEY }}
+         Cypress_projectId: ${{ secrets.Cypress_PROJECTID }}
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Install dependencies
