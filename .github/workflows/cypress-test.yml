@@ -21,4 +21,4 @@ jobs:
         run: npm install
         working-directory: cypress
       - name: Run cypress test
-        run: npx cypress run --record --key 1129f1a8-5179-4024-ae12-d7cbb9006494
+        run: npx cypress run --record
