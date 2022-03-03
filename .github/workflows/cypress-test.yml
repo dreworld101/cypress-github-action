@@ -13,12 +13,13 @@ jobs:
         with:
           record: true
         env:
-         Cypress_record_key: ${{ secrets.Cypress_RECORD_KEY }}
-         Cypress_projectId: ${{ secrets.Cypress_PROJECTID }}
+         CYPRESS_record_key: ${{ secrets.Cypress_RECORD_KEY }}
+         CYPRESS_projectId: ${{ secrets.Cypress_PROJECTID }}
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Install dependencies
         run: npm install
         working-directory: cypress
       - name: Run cypress test
-        run: npx cypress run --record --key
+        run: npx cypress run --record
+        
