@@ -18,7 +18,7 @@ jobs:
         run: npm install
         working-directory: cypress
       - name: Run cypress test
-        run: npx cypress run
+        run: npx cypress run --record
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           CYPRESS_projectId: ${{ secrets.CYPRESS_PROJECTID }}
